@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOSHA - Vivez l'expérience</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <div class="logo-container">
+            <div class="logo-icon"></div>
+            <div>
+              <div class="fosha-logo">FOSHA</div>
+              <div class="fosha-tagline">Vivez l'expérience</div>
+            </div>
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="activites.html">Activités</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="organisateur.html"
+                >Devenir organisateur</a
+              >
+            </li>
+          </ul>
+          <div class="d-flex gap-2">
+            <a href="connexion.html" class="btn btn-outline-primary"
+              >Connexion</a
+            >
+            <a href="inscription.html" class="btn btn-primary">Inscription</a>
+          </div>
+        </div>
+      </div>
+       
+      <div class="dropdown">
+        <button
+          class="btn btn-outline-primary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+        >
+          <i class="fas fa-user me-1"></i>Karim
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" href="mon-compte.html">
+              <i class="fas fa-user me-2"></i>Mon compte
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="mes-participations.html">
+              <i class="fas fa-calendar-check me-2"></i>Mes participations
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="tableau-de-bord.html">
+              <i class="fas fa-user-tie me-2"></i>Tableau de bord
+            </a>
+          </li>
+          <li><hr class="dropdown-divider" /></li>
+          <li>
+            <a class="dropdown-item text-danger" href="index.html">
+              <i class="fas fa-sign-out-alt me-2"></i>Déconnexion
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Section Hero -->
+    <section class="hero-section">
+      <div class="container position-relative">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <h1 class="hero-title">
+              Découvrez le Maroc comme jamais auparavant
+            </h1>
+            <p class="hero-subtitle">
+              Rejoignez la communauté FOSHA et vivez des expériences
+              authentiques à travers tout le Royaume. Des activités uniques
+              créées par des passionnés locaux.
+            </p>
+            <div class="hero-buttons">
+              <a href="activites.html" class="btn btn-light btn-hero me-3">
+                <i class="fas fa-search me-2"></i>Explorer les activités
+              </a>
+              <a href="inscription.html" class="btn btn-outline-light btn-hero">
+                <i class="fas fa-user-plus me-2"></i>Créer un compte
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <div class="hero-image mt-5 mt-lg-0">
+              <img
+                src="https://images.unsplash.com/photo-1543349689-9a4d426bee8e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                alt="Paysage marocain"
+                class="img-fluid rounded-3 shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Statistiques -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 mb-4">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Marocains actifs</div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="stat-number">150+</div>
+            <div class="stat-label">Expériences uniques</div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="stat-number">75+</div>
+            <div class="stat-label">Passionnés locaux</div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Villes marocaines</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Activités Populaires -->
+    <section class="py-5" style="background: var(--light)">
+      <div class="container">
+        <h2 class="section-title">Expériences à venir</h2>
+        <p class="section-subtitle">
+          Découvrez les prochaines activités près de chez vous
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card activity-card h-100">
+              <div class="card-header position-relative">
+                <span class="badge" style="background-color: #10b981">
+                  🚴‍♂️ Randonnée
+                </span>
+                <small
+                  class="text-muted position-absolute end-0 top-0 me-3 mt-2"
+                >
+                  <i class="fas fa-users me-1"></i>
+                  8/12
+                </small>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  Randonnée dans l'Atlas - Vallée d'Ourika
+                </h5>
+                <p class="card-text flex-grow-1 text-muted small">
+                  Découverte des magnifiques paysages de l'Atlas marocain avec
+                  un guide local expérimenté...
+                </p>
+                <div class="mt-auto">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <small class="text-muted">
+                      <i class="fas fa-map-marker-alt me-1"></i>
+                      Marrakech
+                    </small>
+                    <strong class="text-primary"> 200 MAD </strong>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-muted">
+                      <i class="fas fa-calendar me-1"></i>
+                      15/12/2024
+                    </small>
+                    <a
+                      href="activite-details.html"
+                      class="btn btn-sm btn-outline-primary"
+                    >
+                      Voir détails
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card activity-card h-100">
+              <div class="card-header position-relative">
+                <span class="badge" style="background-color: #3b82f6">
+                  🍳 Cuisine
+                </span>
+                <small
+                  class="text-muted position-absolute end-0 top-0 me-3 mt-2"
+                >
+                  <i class="fas fa-users me-1"></i>
+                  6/8
+                </small>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">
+                  Atelier cuisine marocaine traditionnelle
+                </h5>
+                <p class="card-text flex-grow-1 text-muted small">
+                  Apprenez à préparer un tajine authentique et des pâtisseries
+                  marocaines avec une chef...
+                </p>
+                <div class="mt-auto">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <small class="text-muted">
+                      <i class="fas fa-map-marker-alt me-1"></i>
+                      Casablanca
+                    </small>
+                    <strong class="text-primary"> 350 MAD </strong>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-muted">
+                      <i class="fas fa-calendar me-1"></i>
+                      20/12/2024
+                    </small>
+                    <a
+                      href="activite-details.html"
+                      class="btn btn-sm btn-outline-primary"
+                    >
+                      Voir détails
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card activity-card h-100">
+              <div class="card-header position-relative">
+                <span class="badge" style="background-color: #f59e0b">
+                  🎨 Art
+                </span>
+                <small
+                  class="text-muted position-absolute end-0 top-0 me-3 mt-2"
+                >
+                  <i class="fas fa-users me-1"></i>
+                  4/10
+                </small>
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Atelier poterie berbère</h5>
+                <p class="card-text flex-grow-1 text-muted small">
+                  Initiation aux techniques traditionnelles de poterie berbère
+                  avec un artisan local...
+                </p>
+                <div class="mt-auto">
+                  <div
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <small class="text-muted">
+                      <i class="fas fa-map-marker-alt me-1"></i>
+                      Fès
+                    </small>
+                    <strong class="text-primary"> Gratuit </strong>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <small class="text-muted">
+                      <i class="fas fa-calendar me-1"></i>
+                      18/12/2024
+                    </small>
+                    <a
+                      href="activite-details.html"
+                      class="btn btn-sm btn-outline-primary"
+                    >
+                      Voir détails
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5">
+          <a href="activites.html" class="btn btn-outline-primary btn-lg">
+            Voir toutes les activités <i class="fas fa-arrow-right ms-2"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Catégories -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <h2 class="section-title">Explorez par catégorie</h2>
+        <p class="section-subtitle">
+          Trouvez des activités qui correspondent à vos passions
+        </p>
+
+        <div class="row g-4">
+          <div class="col-6 col-md-4 col-lg-2">
+            <a
+              href="activites.html?categorie=randonnee"
+              class="text-decoration-none"
+            >
+              <div class="category-card text-center">
+                <div class="category-icon" style="font-size: 2.5rem">🚴‍♂️</div>
+                <div class="category-name mt-2">Randonnée</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a
+              href="activites.html?categorie=cuisine"
+              class="text-decoration-none"
+            >
+              <div class="category-card text-center">
+                <div class="category-icon" style="font-size: 2.5rem">🍳</div>
+                <div class="category-name mt-2">Cuisine</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a href="activites.html?categorie=art" class="text-decoration-none">
+              <div class="category-card text-center">
+                <div class="category-icon" style="font-size: 2.5rem">🎨</div>
+                <div class="category-name mt-2">Art</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a
+              href="activites.html?categorie=sport"
+              class="text-decoration-none"
+            >
+              <div class="category-card text-center">
+                <div class="category-icon" style="font-size: 2.5rem">⚽</div>
+                <div class="category-name mt-2">Sport</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a
+              href="activites.html?categorie=musique"
+              class="text-decoration-none"
+            >
+              <div class="category-card text-center">
+                <div class="category-icon" style="font-size: 2.5rem">🎵</div>
+                <div class="category-name mt-2">Musique</div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <a
+              href="activites.html?categorie=bien-etre"
+              class="text-decoration-none"
+            >
+              <div class="category-card text-center">
+                <div class="category-icon" style="font-size: 2.5rem">🧘‍♂️</div>
+                <div class="category-name mt-2">Bien-être</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Fonctionnalités -->
+    <section class="py-5" style="background: var(--light)">
+      <div class="container">
+        <h2 class="section-title">Comment ça marche</h2>
+        <p class="section-subtitle">Découvrez FOSHA en 3 étapes simples</p>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="feature-card">
+              <div class="step-number">1</div>
+              <h4 class="feature-title">Créez votre compte</h4>
+              <p class="feature-text">
+                Inscrivez-vous gratuitement en 2 minutes et rejoignez notre
+                communauté de passionnés marocains.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card">
+              <div class="step-number">2</div>
+              <h4 class="feature-title">Découvrez des activités</h4>
+              <p class="feature-text">
+                Parcourez des activités authentiques près de chez vous ou créez
+                les vôtres.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="feature-card">
+              <div class="step-number">3</div>
+              <h4 class="feature-title">Vivez l'expérience</h4>
+              <p class="feature-text">
+                Participez à des activités uniques et créez des souvenirs
+                inoubliables au Maroc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h5>
+              <div class="logo-container">
+                <div class="logo-icon"></div>
+                <div>
+                  <div class="fosha-logo" style="color: white; font-size: 24px">
+                    FOSHA
+                  </div>
+                  <div class="fosha-tagline" style="color: var(--highlight)">
+                    Vivez l'expérience
+                  </div>
+                </div>
+              </div>
+            </h5>
+            <p class="mt-3" style="color: #d1d5db">
+              Votre plateforme de rencontre sociale par les activités. Créons
+              des souvenirs ensemble depuis 2025.
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <h5 style="color: var(--highlight)">Contact</h5>
+            <div style="color: #d1d5db; font-size: 0.9rem">
+              <p><i class="fas fa-map-marker-alt me-2"></i> Tamesna, Maroc</p>
+              <p><i class="fas fa-phone me-2"></i> +212 5 22 123 456</p>
+              <p><i class="fas fa-envelope me-2"></i> contact@fosha.ma</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <h5 style="color: var(--highlight)">Newsletter</h5>
+            <p style="color: #d1d5db; font-size: 0.9rem">
+              Restez informé des nouvelles activités
+            </p>
+            <div class="input-group mb-3">
+              <input
+                type="email"
+                class="form-control newsletter-input"
+                placeholder="Votre email"
+              />
+              <button class="btn btn-primary" type="button">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr style="border-color: #374151; margin: 2rem 0 1rem" />
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="mb-0" style="color: #9ca3af">
+              &copy; 2025 FOSHA Vivez l'expérience. Tous droits réservés.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
